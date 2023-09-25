@@ -21,10 +21,16 @@
     
     <div id="todos-list">
         
+        
         @foreach ($data as $item)
             @include('livewire.includes.todo-card')
         @endforeach
-    
+        
+        <div wire:loading>
+            <span class="text-green-500">Loading...</span>
+        </div>
+      
+
         <div class="my-2">
            {{ $data->links() }}
         </div>
