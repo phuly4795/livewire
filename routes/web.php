@@ -1,10 +1,12 @@
 <?php
 
+use App\Livewire\Contact;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Counter;
 use App\Livewire\CreatePost;
 use App\Livewire\HomePage;
 use App\Livewire\ListUser;
+use App\Livewire\ToDo;
 use App\Livewire\UserDetail;
 use App\Livewire\UserRegister;
 
@@ -22,6 +24,6 @@ use App\Livewire\UserRegister;
 Route::get('/', HomePage::class);
 Route::get('/user', ListUser::class);
 Route::get('/user/{user}', UserDetail::class);
-// Route::get('/counter', Counter::class);
-// Route::get('/post', CreatePost::class);
+Route::get('/contact', Contact::class);
+Route::get('/to-do', ToDo::class);
 // Route::get('/create-user', UserRegister::class);
