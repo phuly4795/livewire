@@ -21,7 +21,7 @@ use App\Livewire\UserRegister;
 |
 */
 
-Route::get('/', HomePage::class);
+Route::get('/', HomePage::class)->name('HomePage');
 Route::get('/user', ListUser::class);
 Route::get('/user/{user}', UserDetail::class);
 Route::get('/contact', Contact::class);
